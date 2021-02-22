@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../images/background1.jpg');
+}
+.card {
+	width: 300px;
+	height: 300px;
+	background-color: rgba(247, 247, 247,0.4);
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+aside{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: seashell;
+    font-size: large;
+}
+a:hover{
+    color: rgb(3, 3, 3);
+}
+#errorInputs{
+    color:rgb(92, 4, 4);
+}

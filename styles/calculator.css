@@ -1,0 +1,56 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body{
+    padding: 0px;
+    margin:0px;
+    background-image: url("../images/background.jpg");
+}
+
+.grid-container {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 90vh;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: minmax(70px ,auto) repeat(5, 70px);
+}
+
+.grid-container > button {
+    font-size: 1.5rem;
+    border: 1.5px solid white;
+    outline: none;
+    background-color:  rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.grid-container > button:hover{
+    background-color:  rgba(255, 255, 255, 0.9);
+}
+
+.output{
+    grid-column: 1/-1;
+    background: rgb(0, 0, 0, 0.8);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    width: 280px;
+    height: 86px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+div > p{
+    max-width: 280px;
+    overflow-wrap: normal;
+}
+a{
+    text-decoration: none;
+    font-size: medium;
+    color: snow;
+}
